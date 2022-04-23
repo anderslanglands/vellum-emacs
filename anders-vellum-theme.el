@@ -604,17 +604,18 @@
     (markdown-html-tag-name-face      :inherit 'font-lock-keyword-face)
 
    ;; org-mode
-   ((outline-1 &override) :foreground red)
-   ((outline-2 &override) :foreground orange)
+   ((outline-1 &override) :foreground vl-fg-darkest :weight 'black)
+   ((outline-2 &override) :foreground vl-fg :weight 'bold)
+   ((outline-3 &override) :foreground vl-fg :weight 'semi-bold)
+   ((outline-4 &override) :foreground vl-fg)
+   ((outline-5 &override) :foreground vl-fg)
    (org-ellipsis :underline nil :background bg     :foreground red)
    ((org-block-begin-line &override)
-    :background fw-orange-blend
-    :foreground fw-orange-text
+    :background vl-bg-l1
     :weight 'semi-bold
     :extend t)
    ((org-block &override)
-    :background fw-orange-blend
-    :foreground fw-orange-text
+    :background vl-bg-l1
     :extend t)
    ((org-quote &override)
     :background fw-orange-blend
